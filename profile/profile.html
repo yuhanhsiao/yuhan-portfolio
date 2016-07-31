@@ -1,0 +1,226 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>無標題文件</title>
+<style type="text/css">
+#container {
+	width: 960px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+}
+#banner {
+	font-family: "Courier New", Courier, monospace;
+	width: 855px;
+	height: 125px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#header {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 28px;
+	color:#696969;
+	width: 110px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 50px;
+	padding-bottom: 10px;
+	letter-spacing: 7px;
+}
+#border {
+	height: 35px;
+	width: 855px;
+	margin-right: auto;
+	margin-left:auto;
+	float: left;
+}
+#main {
+	width: 855px;
+	height: 471px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 10px;
+	/*background-image:url(%E9%A6%96%E9%A0%81.jpg);*/
+	background-size:855px 471px;
+}
+#text {
+	color: #999;
+	width: 300px;
+	top:55%;
+	position:relative;
+	z-index: 2;
+	
+}
+#footer {
+	width: 855px;
+	height: 100px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top:10px;
+}
+#info {
+	font-family: "Courier New", Courier, monospace;
+	font-size: 12px;
+	color: #666;
+	height: 35px;
+	width: 220px;
+	margin-left: auto;
+	margin-top: 50px;
+	border-left:1px #A0A0A0 solid;
+	border-right:1px #A0A0A0 solid;
+	float: left;
+	line-height: 18px;
+	padding-left: 15px;
+}
+/*------------------選單------------------------*/
+ul { /* 取消ul預設的內縮及樣式 */ 
+        width: 853px;
+		height: 35px;
+		margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+
+    ul.drop-down-menu {
+        border-right: 1.5px #A0A0A0 solid;
+		border-left: 1.5px #A0A0A0 solid;
+        display: inline-block;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 12px;
+		text-align:center;
+    }
+
+    ul.drop-down-menu li {
+        position: relative;
+        white-space: nowrap;
+        border-right: 1.5px #A0A0A0 solid;        
+    }
+
+    ul.drop-down-menu > li:last-child {
+        border-right: none; 
+    }
+
+    ul.drop-down-menu > li {
+        float: left; /* 只有第一層是靠左對齊*/
+    }  
+    
+     ul.drop-down-menu a {
+        background-color: none;
+        color: #666;
+        display: block;
+        width:141px;
+        text-decoration: none;
+        line-height: 35px;
+        
+    }
+    ul.drop-down-menu a:hover { /* 滑鼠滑入按鈕變色*/
+	width: 135px;
+	height: 30px;
+		-webkit-box-sizing: border-box;
+    	 -moz-box-sizing: border-box;
+          box-sizing: border-box;
+		  border: 2px #D8D8D8 solid;
+		  margin: 3px;
+    }
+    ul.drop-down-menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
+        width: 135px;
+		height: 30px;
+		-webkit-box-sizing: border-box;
+    	 -moz-box-sizing: border-box;
+          box-sizing: border-box;
+		  border: 2px #D8D8D8 solid;
+		  margin: 3px;
+    }
+/*-----------------次選單-----------------------*/
+		ul.drop-down-menu ul {
+        position: absolute;
+        z-index: 99;
+        left: 0px;
+        top: 100%;
+		width:　141px;
+		height:35px;
+    }
+
+    ul.drop-down-menu ul li {
+        border-right: none;
+		width:141px;
+		height:35px;
+    }
+
+    ul.drop-down-menu ul li:last-child {
+        border-bottom: none;
+		width:140px;
+    }
+
+	ul.drop-down-menu ul { /*隱藏次選單*/  
+		display: none;  
+    } 
+
+    ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
+		display: block;
+    }
+	 ul.drop-down-menu ul a:hover { /* 滑鼠滑入按鈕變色*/
+		background:#D8D8D8;
+    }
+</style>
+</head>
+
+<body>
+<div id="container" style="background-color:#F2F1EC;">
+  <div id="banner">
+    <div id="header">YUHAN</div>
+    <div id="border">
+    	<ul class="drop-down-menu">
+       	 	<li><a href="#">ABOUT ME</a>
+        	</li>
+        	<li><a href="#">VIDEO</a>
+            	<ul>
+                <li><a href="#">氣</a></li>
+                <li><a href="#">破</a></li>
+                <li><a href="#">狗。食</a></li>
+                </ul>
+       	 	</li>
+        	<li><a href="#">INSTELLATION</a>
+            	<ul>
+                <li><a href="#">Just kidding.</a></li>
+                <li><a href="#">Blossom?</a></li>
+        		</ul>
+            </li>
+        	<li><a href="#">PHOTO REMAKES</a>
+        	</li>
+        	<li><a href="#">FABRIC</a>
+        	</li>
+        	<li><a href="#">GRAPHIC DESIGN</a>
+            	<ul>
+                <li><a href="#">平面構成</a></li>
+                <li><a href="#">邀請卡設計</a></li>
+        		</ul>
+            </li>
+    	</ul>
+    </div>
+  </div>
+<!--------------------內容開始---------------------------->
+  <div id="main" style="background-color: #ECEAE3;">
+    <div id="text" style="margin:0px 400px; border-left: 2px #D8D8D8 solid"> 
+    <pre>
+ 蕭 羽 涵
+ YUHAN HSIAO
+    
+ KAOHSIUNG,TAIWAN
+    
+ NEWMEDIA ART
+ TAIPEI NATIONAL UNIVERSITY OF THE ARTS</pre>
+  </div>
+  </div>
+  
+<!--------------------內容截止---------------------------->  
+  <div id="footer">
+    <div id="info">E-mail: hanlovekiwi@gmail.com
+    			   Instagram: yuhanhsiao
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
